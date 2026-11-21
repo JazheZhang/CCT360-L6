@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <h1>Live Weather</h1>
+    <p>Pick a city to get its weather right now. The page colour changes with the temperature.</p>
+
+    <div class="buttons">
+      <button onclick="getWeather('Mississauga', 43.59, -79.64)">Mississauga</button>
+      <button onclick="getWeather('Vientiane', 17.97, 102.63)">Vientiane</button>
+      <button onclick="getWeather('London', 51.51, -0.13)">London</button>
+      <button onclick="getWeather('Sydney', -33.87, 151.21)">Sydney</button>
+    </div>
+
+    <div id="card">
+      <h2 id="city">No city picked yet</h2>
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="wind"></p>
+      <p id="advice"></p>
+    </div>
+
+    <p class="credit">Weather data from <a href="https://open-meteo.com/">Open-Meteo</a></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
