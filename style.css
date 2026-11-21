@@ -1,0 +1,47 @@
+/* ===== Live Weather ===== */
+
+body {
+  background-color: #f4f1ea;
+  color: #22263a;
+  font-family: Arial, sans-serif;
+  transition: background-color 1s;   /* smooth colour change */
+}
+
+main {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #f2b35b;
+  color: #22263a;
+  border: 2px solid #22263a;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#card {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+#temperature {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.credit a {
+  color: inherit;
+}
